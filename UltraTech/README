@@ -1,0 +1,11 @@
+Usage: python3 param_fuzz.py -p port -w wordlist Host
+
+Python script for parameters valid inside UltraTech machine from THM.
+
+Remember to add ip address to your hosts file
+
+# sudo nano /etc/hosts
+127.0.0.1  localhost
+...
+10.10.x.x  ultratech.thm
+

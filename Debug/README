@@ -1,0 +1,21 @@
+Script to exploit deserialization PHP attack.
+
+usage: python3 deserialziation2RCE.py [OPTIONS]
+
+RCE script taking advantage of PHP deserialization vulnerability.
+
+options:
+  -h, --help            show this help message and exit
+
+Required Arguments:
+  -u URL                Target website url.
+
+Optional Arguments:
+  -command CMD          Command to execute in vulnerable server.
+  -confirm_exploit filename
+                        Perform web request to confirm if exploit worked.
+  -exploit filename     Exploit web vulnerability with filename of our choice.
+  -rce filename         Remote Code Execution with file used in -exploit and -confirm_exploit functions
+  -banner               Banner script.
+
+Script developed specifically for Debug tryhackme machine.
